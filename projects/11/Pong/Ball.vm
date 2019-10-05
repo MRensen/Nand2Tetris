@@ -1,0 +1,1445 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.new 0
+push constant 15
+call Memory.alloc 1
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+pop this 10
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//<term>
+push constant 6
+//</term>
+sub
+//</expression>
+pop this 11
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 4
+//</term>
+//</expression>
+pop this 12
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 5
+//</term>
+//<term>
+push constant 6
+//</term>
+sub
+//</expression>
+pop this 13
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 14
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call show 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.dispose 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.deAlloc 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.show 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call draw 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.hide 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call draw 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.draw 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 5
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 5
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.getLeft 0
+push argument 0
+pop pointer 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.getRight 0
+push argument 0
+pop pointer 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 5
+//</term>
+add
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Ball.setDestination 3
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push this 0
+//</term>
+sub
+//</expression>
+pop this 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<term>
+push this 1
+//</term>
+sub
+//</expression>
+pop this 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 2
+//</term>
+//</expression>
+//</expressionList>
+call Math.abs 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 3
+//</term>
+//</expression>
+//</expressionList>
+call Math.abs 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push local 1
+//</term>
+lt
+//</expression>
+//</term>
+//</expression>
+pop this 7
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 7
+//</term>
+//</expression>
+not
+if-goto IFFALSE0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push argument 1
+//</term>
+lt
+//</expression>
+//</term>
+//</expression>
+pop this 8
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push argument 0
+//</term>
+lt
+//</expression>
+//</term>
+//</expression>
+pop this 9
+//</letStatement>
+//</statements>
+goto IFTRUE0
+label IFFALSE0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push argument 0
+//</term>
+lt
+//</expression>
+//</term>
+//</expression>
+pop this 8
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push argument 1
+//</term>
+lt
+//</expression>
+//</term>
+//</expression>
+pop this 9
+//</letStatement>
+//</statements>
+label IFTRUE0
+//</ifStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//<term>
+push local 1
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+//<term>
+push local 0
+//</term>
+sub
+//</expression>
+pop this 4
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//<term>
+push local 1
+//</term>
+call Math.multiply 2
+//</expression>
+pop this 5
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push local 0
+//</term>
+sub
+//</expression>
+//</term>
+call Math.multiply 2
+//</expression>
+pop this 6
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Ball.move 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call hide 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 4
+//</term>
+//<term>
+push constant 0
+//</term>
+lt
+//</expression>
+not
+if-goto IFFALSE2
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 4
+//</term>
+//<term>
+push this 5
+//</term>
+add
+//</expression>
+pop this 4
+//</letStatement>
+//</statements>
+goto IFTRUE2
+label IFFALSE2
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 4
+//</term>
+//<term>
+push this 6
+//</term>
+add
+//</expression>
+pop this 4
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 9
+//</term>
+//</expression>
+not
+if-goto IFFALSE3
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 7
+//</term>
+//</expression>
+not
+if-goto IFFALSE4
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 4
+//</term>
+add
+//</expression>
+pop this 0
+//</letStatement>
+//</statements>
+goto IFTRUE4
+label IFFALSE4
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 4
+//</term>
+add
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+label IFTRUE4
+//</ifStatement>
+//</statements>
+goto IFTRUE3
+label IFFALSE3
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 7
+//</term>
+//</expression>
+not
+if-goto IFFALSE6
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 4
+//</term>
+sub
+//</expression>
+pop this 0
+//</letStatement>
+//</statements>
+goto IFTRUE6
+label IFFALSE6
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 4
+//</term>
+sub
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+label IFTRUE6
+//</ifStatement>
+//</statements>
+label IFTRUE3
+//</ifStatement>
+//</statements>
+label IFTRUE2
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 8
+//</term>
+//</expression>
+not
+if-goto IFFALSE10
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 7
+//</term>
+//</expression>
+not
+if-goto IFFALSE11
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 4
+//</term>
+add
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE11
+label IFFALSE11
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 4
+//</term>
+add
+//</expression>
+pop this 0
+//</letStatement>
+//</statements>
+label IFTRUE11
+//</ifStatement>
+//</statements>
+goto IFTRUE10
+label IFFALSE10
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 7
+//</term>
+//</expression>
+not
+if-goto IFFALSE13
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 4
+//</term>
+sub
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE13
+label IFFALSE13
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 4
+//</term>
+sub
+//</expression>
+pop this 0
+//</letStatement>
+//</statements>
+label IFTRUE13
+//</ifStatement>
+//</statements>
+label IFTRUE10
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 10
+//</term>
+gt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE16
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+pop this 14
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 10
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//</statements>
+goto IFTRUE16
+label IFFALSE16
+label IFTRUE16
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 11
+//</term>
+lt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE18
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+pop this 14
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 11
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//</statements>
+goto IFTRUE18
+label IFFALSE18
+label IFTRUE18
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 12
+//</term>
+gt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE20
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+pop this 14
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 12
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE20
+label IFFALSE20
+label IFTRUE20
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 13
+//</term>
+lt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE22
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 4
+//</term>
+//</expression>
+pop this 14
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 13
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE22
+label IFFALSE22
+label IFTRUE22
+//</ifStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call show 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push this 14
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Ball.bounce 5
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 10
+//</term>
+call Math.divide 2
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 3
+//</term>
+//<term>
+push constant 10
+//</term>
+call Math.divide 2
+//</expression>
+pop local 3
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE24
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//</statements>
+goto IFTRUE24
+label IFFALSE24
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 0
+//</term>
+lt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push constant 1
+//</term>
+eq
+//</expression>
+//</term>
+and
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 0
+//</term>
+lt
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+//<expression>
+//<term>
+//<term>
+push constant 1
+//</term>
+neg
+//</term>
+//</expression>
+//</term>
+eq
+//</expression>
+//</term>
+and
+//</expression>
+//</term>
+or
+//</expression>
+not
+if-goto IFFALSE25
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 20
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//</statements>
+goto IFTRUE25
+label IFFALSE25
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 5
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//</statements>
+label IFTRUE25
+//</ifStatement>
+//</statements>
+label IFTRUE24
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 14
+//</term>
+//<term>
+push constant 1
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE28
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 506
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 3
+//</term>
+//<term>
+//<expression>
+//<term>
+//<term>
+push constant 50
+//</term>
+neg
+//</term>
+//</expression>
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+//<term>
+push local 2
+//</term>
+call Math.divide 2
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push local 4
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+add
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto IFTRUE28
+label IFFALSE28
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 14
+//</term>
+//<term>
+push constant 2
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE29
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 3
+//</term>
+//<term>
+push constant 50
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+//<term>
+push local 2
+//</term>
+call Math.divide 2
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push local 4
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+add
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto IFTRUE29
+label IFFALSE29
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 14
+//</term>
+//<term>
+push constant 3
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE30
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 250
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<term>
+//<expression>
+//<term>
+//<term>
+push constant 25
+//</term>
+neg
+//</term>
+//</expression>
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+//<term>
+push local 3
+//</term>
+call Math.divide 2
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push local 4
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto IFTRUE30
+label IFFALSE30
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<term>
+push constant 25
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+//<term>
+push local 3
+//</term>
+call Math.divide 2
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push local 4
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+label IFTRUE30
+//</ifStatement>
+//</statements>
+label IFTRUE29
+//</ifStatement>
+//</statements>
+label IFTRUE28
+//</ifStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</expressionList>
+call setDestination 3
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

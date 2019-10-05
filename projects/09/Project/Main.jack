@@ -1,0 +1,12 @@
+class Main{
+    	
+   	function void main(){
+		var Controller controller;
+		let controller = Controller.new();
+		do controller.run();
+		do controller.dispose();
+		return;
+	}
+	
+	
+}

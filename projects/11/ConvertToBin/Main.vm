@@ -1,0 +1,369 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Main.main 1
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8001
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 16
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<term>
+push constant 1
+//</term>
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Main.fillMemory 3
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 4567
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//</expressionList>
+call Main.convert 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Main.convert 3
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<whileStatement>
+label WHILETRUE0
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//</expressionList>
+call Main.nextMask 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push constant 16
+//</term>
+gt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE1
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push local 0
+//</term>
+and
+//</expression>
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE2
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8000
+//</term>
+//<term>
+push local 1
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE2
+label IFFALSE2
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8000
+//</term>
+//<term>
+push local 1
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+label IFTRUE2
+//</ifStatement>
+//</statements>
+goto IFTRUE1
+label IFFALSE1
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//</statements>
+label IFTRUE1
+//</ifStatement>
+//</statements>
+goto WHILETRUE0
+label WHILEFALSE0
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Main.nextMask 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE6
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+goto IFTRUE6
+label IFFALSE6
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push constant 2
+//</term>
+call Math.multiply 2
+//</expression>
+return
+//</returnStatement>
+//</statements>
+label IFTRUE6
+//</ifStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Main.fillMemory 0
+//<statements>
+//<whileStatement>
+label WHILETRUE8
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<term>
+push constant 0
+//</term>
+gt
+//</expression>
+not
+if-goto WHILEFALSE8
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<term>
+push constant 1
+//</term>
+sub
+//</expression>
+pop argument 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+pop argument 0
+//</letStatement>
+//</statements>
+goto WHILETRUE8
+label WHILEFALSE8
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

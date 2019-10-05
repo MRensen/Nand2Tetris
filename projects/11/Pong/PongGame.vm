@@ -1,0 +1,1055 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function PongGame.new 0
+push constant 7
+call Memory.alloc 1
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Screen.clearScreen 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 50
+//</term>
+//</expression>
+pop this 6
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 230
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 229
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 6
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 7
+//</term>
+//</expression>
+//</expressionList>
+call Bat.new 4
+//</subroutineCall>
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 253
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 222
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 511
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 229
+//</term>
+//</expression>
+//</expressionList>
+call Ball.new 6
+//</subroutineCall>
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push constant 400
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call ball.setDestination 3
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 238
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 511
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 240
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 22
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Output.moveCursor 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 4
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 5
+//</letStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function PongGame.dispose 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call bat.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call ball.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.deAlloc 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function PongGame.newInstance 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call PongGame.new 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop static 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function PongGame.getInstance 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push static 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function PongGame.run 1
+push argument 0
+pop pointer 0
+//<statements>
+//<whileStatement>
+label WHILETRUE0
+//<expression>
+//<term>
+//<term>
+push this 3
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE0
+//<statements>
+//<whileStatement>
+label WHILETRUE1
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+//<term>
+push this 3
+//</term>
+not
+//</term>
+//</expression>
+//</term>
+and
+//</expression>
+not
+if-goto WHILEFALSE1
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call bat.move 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call moveBall 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 50
+//</term>
+//</expression>
+//</expressionList>
+call Sys.wait 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto WHILETRUE1
+label WHILEFALSE1
+//</whileStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 130
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE3
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+//</expressionList>
+call bat.setDirection 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE3
+label IFFALSE3
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 132
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE4
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+//</expressionList>
+call bat.setDirection 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE4
+label IFFALSE4
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 140
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE5
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop this 3
+//</letStatement>
+//</statements>
+goto IFTRUE5
+label IFFALSE5
+label IFTRUE5
+//</ifStatement>
+//</statements>
+label IFTRUE4
+//</ifStatement>
+//</statements>
+label IFTRUE3
+//</ifStatement>
+//<whileStatement>
+label WHILETRUE9
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+//<term>
+push this 3
+//</term>
+not
+//</term>
+//</expression>
+//</term>
+and
+//</expression>
+not
+if-goto WHILEFALSE9
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call bat.move 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call moveBall 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 50
+//</term>
+//</expression>
+//</expressionList>
+call Sys.wait 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto WHILETRUE9
+label WHILEFALSE9
+//</whileStatement>
+//</statements>
+goto WHILETRUE0
+label WHILEFALSE0
+//</whileStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 3
+//</term>
+//</expression>
+not
+if-goto IFFALSE12
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 27
+//</term>
+//</expression>
+//</expressionList>
+call Output.moveCursor 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE12
+label IFFALSE12
+label IFTRUE12
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function PongGame.moveBall 5
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call ball.move 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop this 2
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 0
+//</term>
+gt
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push this 5
+//</term>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+//</term>
+and
+//</expression>
+not
+if-goto IFFALSE14
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 2
+//</term>
+//</expression>
+pop this 5
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call bat.getLeft 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call bat.getRight 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call ball.getLeft 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call ball.getRight 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 4
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE15
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push local 4
+//</term>
+gt
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<term>
+push local 3
+//</term>
+lt
+//</expression>
+//</term>
+or
+//</expression>
+pop this 3
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<term>
+push this 3
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto IFFALSE16
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push local 4
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push constant 10
+//</term>
+add
+//</expression>
+//</term>
+lt
+//</expression>
+not
+if-goto IFFALSE17
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<term>
+push constant 1
+//</term>
+neg
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto IFTRUE17
+label IFFALSE17
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push local 3
+//</term>
+//<term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<term>
+push constant 10
+//</term>
+sub
+//</expression>
+//</term>
+gt
+//</expression>
+not
+if-goto IFFALSE18
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto IFTRUE18
+label IFFALSE18
+label IFTRUE18
+//</ifStatement>
+//</statements>
+label IFTRUE17
+//</ifStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 6
+//</term>
+//<term>
+push constant 2
+//</term>
+sub
+//</expression>
+pop this 6
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push this 6
+//</term>
+//</expression>
+//</expressionList>
+call bat.setWidth 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 4
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+pop this 4
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 22
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 7
+//</term>
+//</expression>
+//</expressionList>
+call Output.moveCursor 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 4
+//</term>
+//</expression>
+//</expressionList>
+call Output.printInt 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE16
+label IFFALSE16
+label IFTRUE16
+//</ifStatement>
+//</statements>
+goto IFTRUE15
+label IFFALSE15
+label IFTRUE15
+//</ifStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//</expressionList>
+call ball.bounce 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE14
+label IFFALSE14
+label IFTRUE14
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

@@ -1,0 +1,55 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Main.main 1
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call PongGame.newInstance 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call PongGame.getInstance 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call game.run 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//</expressionList>
+call game.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

@@ -1,0 +1,45 @@
+class Tail {
+	field int x;
+	field int y;
+	field int size;
+
+	constructor Tail new(int setx, int sety, int setsize){
+	let x = setx;
+	let y = sety;
+	let size = setsize;
+	return this;
+    }
+
+	method void draw (int xx, int yy, int s){
+		do Screen.drawRectangle(xx, yy, xx + s, yy + s);
+		return;
+	}
+
+	method void setX(int val) {
+		let x = val;
+		return;
+    	}
+
+    	method int getX() {
+		return x;
+    	}
+
+    	method void setY(int val) {
+		let y = val;
+		return;
+    	}
+
+    	method void setSize(itn val){
+		let size = val;
+		return;
+    	}
+
+    	method int getSize(){
+		return size;
+    	}
+
+    	method int getY() {
+		return y;
+    	}
+
+}

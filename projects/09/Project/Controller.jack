@@ -1,0 +1,130 @@
+class Controller{
+	field Snake snake;
+	field int snakeLength;
+	field int direction;
+	field Dot dot;
+	field Array tail;
+
+	constructor Controller new(){
+		do initialize();
+		let direction = 0;
+		let snake = Snake.new(0,0);
+		//let snake = Array.new(100);
+		let snakeLength = 0;
+		let tail = Array.new(snakeLength);
+		return this;
+	}
+
+	method void initialize(){
+		var int count;
+		let count = 100;
+		while (count) {
+		    let snake[count] = null;
+		    let count = count-1;
+		}
+		return;
+	}
+
+	method void dispose() {
+      		do snake.dispose();
+      		do Memory.deAlloc(this);
+      		return;
+   	}
+
+	method void moveSnake() {
+	      	if (direction = 1) { do snake.moveUp(); }
+	      	if (direction = 2) { do snake.moveDown(); }
+      		if (direction = 3) { do snake.moveLeft(); }
+      		if (direction = 4) { do snake.moveRight(); }
+      		do Sys.wait(30);  // delays the next movement
+      		return;
+   	}
+
+	method void drawTail(){
+		var int count;
+		var int xx;
+		var int yy;
+		var int size;
+		var Tail tailpiece;
+		let count = 0;
+		let yy = snake.getY();
+		let xx = snake.getX();
+		let size = snake.getSize();
+		let tailpiece = tail[count];
+		
+		
+		while (~(count=(snakeLength-1))){
+			//draw first piece of tail from snake data or tail data and remember tail data
+			do tailpiece.draw(snake.getX(), snake.getY(), snake.getSize());
+			let xx = tailpiece.getX();
+			let yy = tailpiece.getY();
+			let size = tailpiece.getSize();
+			
+			let count = count+1;
+		}
+		return;
+	}
+
+	method void setTail(){
+		var int count;
+		var int xx;
+		var int yy;
+		var int size;
+		var Tail tailpiece;
+		let tailpiece = tail[count];
+		let yy = snake.getY();
+		let xx = snake.getX();
+		let count = 0;
+		let size = snake.getSize();
+
+		while (~(count=(snakeLength-1))) {
+			let tailpiece = Tail.new(xx,yy,size);
+			let xx = tailpiece.getX();
+			let yy = tailpiece.getY();
+			let size = tailpiece.getSize();
+			let count = count+1;
+		}
+		return;
+	}
+
+	method void run() {
+      		var char key;  // the key currently pressed by the user
+      		var boolean exit;
+		var boolean hit;
+      		let exit = false;
+		let dot = Dot.new(snake.getX(), snake.getY());
+      
+      		while (~exit) {
+         	// waits for a key to be pressed	
+			let hit = dot.hit(snake.getX(), snake.getY());
+			while (~hit){
+         			while (key = 0) {
+            				let key = Keyboard.keyPressed();
+            				do moveSnake();
+         			}
+         			if (key = 81)  { let exit = true; }     // q key
+         			if (key = 131) { let direction = 1; }   // up arrow
+         			if (key = 133) { let direction = 2; }   // down arrow
+         			if (key = 130) { let direction = 3; }   // left arrow
+         			if (key = 132) { let direction = 4; }   // right arrow
+
+         			// waits for the key to be released
+         			while (~(key = 0)) {
+            				let key = Keyboard.keyPressed();
+            				do moveSnake();	
+         			}	
+     			} // while (~hit)
+			if(hit){
+				do dot.dispose();
+				//TODO: draw new tail for snake
+				let dot = Dot.new(snake.getX(), snake.getY());
+				let snakeLength = snakeLength + 1;
+				let tail = Array.new(snakeLength);
+				do setTail();
+			}
+		} //while (~exit)
+     		return;
+   	}
+
+
+}

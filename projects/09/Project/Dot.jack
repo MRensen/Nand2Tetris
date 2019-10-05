@@ -1,0 +1,49 @@
+class Dot{
+	/* screen is 512 high, 256 broad*/
+	field int x;
+	field int y;
+	field int size;
+
+	constructor Dot new(int snakex, int snakey){
+		let y = snakey +50 -((snakey+50/512)*512); //y = snakey mod screenheight
+		let x = snakex +50 -((snakex+50/256)*256); //x = snakex mod screenwidth
+		let size = 5;
+		do Screen.setColor(true);
+         	do Screen.drawRectangle(x,y,x+size, y+size);
+		return this;
+	}
+
+	method boolean hit(int snakex, int snakey){
+		if((snakex = x) & (snakey = y)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	/*getters setters*/
+	method int getX(){
+		return x;
+	}
+	
+	method void setX(int setx){
+		let x = setx;
+		return;
+	}
+
+	method int getY(){
+		return y;
+	}
+
+	method void setY(int sety){
+		let y = sety;
+		return;
+	}
+
+	method void dispose() {
+      		do Memory.deAlloc(this);
+      		return;
+   	}
+
+}
