@@ -1,0 +1,56 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Array.new 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.alloc 1
+//</subroutineCall>
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Array.dispose 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.deAlloc 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

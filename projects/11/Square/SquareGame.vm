@@ -1,0 +1,550 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function SquareGame.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 30
+//</term>
+//</expression>
+//</expressionList>
+call Square.new 3
+//</subroutineCall>
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function SquareGame.dispose 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.deAlloc 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function SquareGame.moveSquare 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 1
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.moveUp 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE0
+label IFFALSE0
+label IFTRUE0
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 2
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE2
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.moveDown 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE2
+label IFFALSE2
+label IFTRUE2
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 3
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE4
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.moveLeft 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE4
+label IFFALSE4
+label IFTRUE4
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 4
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE6
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.moveRight 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE6
+label IFFALSE6
+label IFTRUE6
+//</ifStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 5
+//</term>
+//</expression>
+//</expressionList>
+call Sys.wait 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function SquareGame.run 2
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<whileStatement>
+label WHILETRUE8
+//<expression>
+//<term>
+//<term>
+push local 1
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE8
+//<statements>
+//<whileStatement>
+label WHILETRUE9
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+not
+if-goto WHILEFALSE9
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call moveSquare 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto WHILETRUE9
+label WHILEFALSE9
+//</whileStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 81
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE11
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto IFTRUE11
+label IFFALSE11
+label IFTRUE11
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 90
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE13
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.decSize 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE13
+label IFFALSE13
+label IFTRUE13
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 88
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE15
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push this 0
+//<expressionList>
+//</expressionList>
+call Square.incSize 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE15
+label IFFALSE15
+label IFTRUE15
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 131
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE17
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE17
+label IFFALSE17
+label IFTRUE17
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 133
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE19
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE19
+label IFFALSE19
+label IFTRUE19
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 130
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE21
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE21
+label IFFALSE21
+label IFTRUE21
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 132
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE23
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 4
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE23
+label IFFALSE23
+label IFTRUE23
+//</ifStatement>
+//<whileStatement>
+label WHILETRUE25
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE25
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call moveSquare 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto WHILETRUE25
+label WHILEFALSE25
+//</whileStatement>
+//</statements>
+goto WHILETRUE8
+label WHILEFALSE8
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

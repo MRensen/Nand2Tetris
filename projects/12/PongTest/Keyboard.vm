@@ -1,0 +1,230 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Keyboard.init 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 24576
+//</term>
+//</expression>
+pop static 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Keyboard.keyPressed 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push static 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.peek 1
+//</subroutineCall>
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Keyboard.readChar 1
+//<statements>
+//<whileStatement>
+label WHILETRUE0
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+not
+if-goto WHILEFALSE0
+goto WHILETRUE0
+label WHILEFALSE0
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<whileStatement>
+label WHILETRUE1
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE1
+goto WHILETRUE1
+label WHILEFALSE1
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//</expressionList>
+call Output.printChar 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Keyboard.readLine 2
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 80
+//</term>
+//</expression>
+//</expressionList>
+call String.new 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.readChar 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<whileStatement>
+label WHILETRUE2
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call String.newLine 0
+//</subroutineCall>
+//</term>
+//</expression>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE2
+//<statements>
+//</statements>
+goto WHILETRUE2
+label WHILEFALSE2
+//</whileStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

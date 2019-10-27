@@ -1,0 +1,40 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Main.main 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//<term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//<term>
+push constant 3
+//</term>
+call Math.multiply 2
+//</expression>
+//</term>
+add
+//</expression>
+//</expressionList>
+call null.printInt 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

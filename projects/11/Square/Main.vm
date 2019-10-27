@@ -1,0 +1,47 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Main.main 1
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call SquareGame.new 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push local 0
+//<expressionList>
+//</expressionList>
+call SquareGame.run 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push local 0
+//<expressionList>
+//</expressionList>
+call SquareGame.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

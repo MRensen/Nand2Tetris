@@ -1,0 +1,932 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.new 0
+push constant 3
+call Memory.alloc 1
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+not
+if-goto IFFALSE0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+pop argument 0
+//</letStatement>
+//</statements>
+goto IFTRUE0
+label IFFALSE0
+label IFTRUE0
+//</ifStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//</expressionList>
+call Array.new 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop this 2
+//</letStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.dispose 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//</expressionList>
+call Array.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.length 0
+push argument 0
+pop pointer 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.charAt 0
+push argument 0
+pop pointer 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+push this 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.setCharAt 0
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+push this 0
+add
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.appendChar 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<expression>
+//<term>
+push this 2
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE2
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+push this 0
+add
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop this 1
+//</letStatement>
+//</statements>
+goto IFTRUE2
+label IFFALSE2
+label IFTRUE2
+//</ifStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.eraseLastChar 0
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+sub
+//</expression>
+push this 0
+add
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+sub
+//</expression>
+pop this 1
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function String.intValue 4
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+gt
+//</expression>
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+push this 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 45
+//</term>
+//</expression>
+eq
+//</expression>
+//</term>
+//</expression>
+and
+//</expression>
+not
+if-goto IFFALSE4
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop local 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto IFTRUE4
+label IFFALSE4
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+label IFTRUE4
+//</ifStatement>
+//<whileStatement>
+label WHILETRUE6
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+lt
+//</expression>
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+push this 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 48
+//</term>
+//</expression>
+lt
+//</expression>
+//</term>
+not
+//</term>
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+push this 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 57
+//</term>
+//</expression>
+gt
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+and
+//</expression>
+//</term>
+//</expression>
+and
+//</expression>
+not
+if-goto WHILEFALSE6
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+push this 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 48
+//</term>
+//</expression>
+sub
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+//</term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto WHILETRUE6
+label WHILEFALSE6
+//</whileStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 3
+//</term>
+//</expression>
+not
+if-goto IFFALSE8
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+//<term>
+push local 0
+//</term>
+neg
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+goto IFTRUE8
+label IFFALSE8
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+label IFTRUE8
+//</ifStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.setInt 0
+push argument 0
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE10
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<term>
+push argument 1
+//</term>
+neg
+//</term>
+//</expression>
+pop argument 1
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push constant 45
+//</term>
+//</expression>
+//</expressionList>
+call String.appendChar 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE10
+label IFFALSE10
+label IFTRUE10
+//</ifStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+//</expressionList>
+call String.int2String 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function String.int2String 2
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+//</expressionList>
+call String.mod 2
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 48
+//</term>
+//</expression>
+add
+//</expression>
+pop local 1
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE12
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</expressionList>
+call String.appendChar 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE12
+label IFFALSE12
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+call Math.divide 2
+//</expression>
+//</expressionList>
+call String.int2String 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+//<expressionList>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</expressionList>
+call String.appendChar 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+label IFTRUE12
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.mod 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+not
+if-goto IFFALSE14
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+goto IFTRUE14
+label IFFALSE14
+label IFTRUE14
+//</ifStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+//</expressionList>
+call Math.divide 2
+//</subroutineCall>
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+//</term>
+//</expression>
+sub
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.newLine 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push constant 128
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.backSpace 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push constant 129
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function String.doubleQuote 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+push constant 34
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

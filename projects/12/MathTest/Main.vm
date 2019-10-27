@@ -1,0 +1,456 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Main.main 1
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 8000
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+push constant 2
+//</term>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<term>
+push constant 30
+//</term>
+neg
+//</term>
+//</expression>
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 100
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+push constant 1
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 4
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 5
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 152
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 5
+//</term>
+//</expression>
+//</expressionList>
+call Math.mod 2
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 6
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<term>
+push constant 18000
+//</term>
+neg
+//</term>
+//</expression>
+//</term>
+//<expression>
+//<term>
+push constant 6
+//</term>
+//</expression>
+call Math.divide 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 7
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+push constant 32766
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<term>
+push constant 32767
+//</term>
+neg
+//</term>
+//</expression>
+//</term>
+//</expression>
+call Math.divide 2
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 8
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 9
+//</term>
+//</expression>
+//</expressionList>
+call Math.sqrt 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 9
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 32767
+//</term>
+//</expression>
+//</expressionList>
+call Math.sqrt 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 10
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 345
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 123
+//</term>
+//</expression>
+//</expressionList>
+call Math.min 2
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 11
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 123
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<term>
+push constant 345
+//</term>
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Math.max 2
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 12
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 27
+//</term>
+//</expression>
+//</expressionList>
+call Math.abs 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 13
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+//<term>
+push constant 32767
+//</term>
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Math.abs 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

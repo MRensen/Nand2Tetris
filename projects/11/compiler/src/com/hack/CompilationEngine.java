@@ -29,7 +29,10 @@ public class CompilationEngine {
         try {
             next();
             CompileClass();
-        }catch(IOException e){e.printStackTrace();}
+        }catch(Exception e){e.printStackTrace();
+            System.out.println("token: " +token+"\n" +
+                                "subroutine: " + functionName +"\n" +
+                                "class: "+ className +"\n");}
 
     }
 
@@ -163,6 +166,9 @@ public class CompilationEngine {
             next();
              //varName(identifier)
             parameters ++;
+            if(subroutineType.equals("method")){
+                st.define("this",className, Kind.ARG);
+            }
             st.define(token, type, Kind.ARG);
             next();
             if (token.equals(",")) {
@@ -195,12 +201,15 @@ public class CompilationEngine {
         vm.writeFunction(className + "." + functionName, st.varCount(Kind.LOCAL));
 
         if(subroutineType.equals("constructor")){
-            vm.writePush(VMWriter.Segment.CONSTANT, st.varCount(Kind.FIELD));
+            vm.writePush(VMWriter.Segment.CONSTANT, st.varCount(Kind.FIELD)+st.varCount(Kind.STATIC));
             vm.writeCall("Memory.alloc", 1);
             vm.writePop(VMWriter.Segment.POINTER, 0);
         } else if(subroutineType.equals("method")){
             vm.writePush(VMWriter.Segment.ARGUMENT, 0);
             vm.writePop(VMWriter.Segment.POINTER, 0);
+        } if(token.equals("}")){
+            next();
+            return;
         }
         compileStatements();
         next();
@@ -346,7 +355,7 @@ public class CompilationEngine {
 
     }
     public void compileWhile()throws IOException{
-        int labelCounter = generalLabelCounter++; //TODO: change it so that labelcounter actually changes always
+        int labelCounter = generalLabelCounter++;
         //Compiles a while statement
         vm.writecomment("<whileStatement>\n");
          //"while"
@@ -362,7 +371,13 @@ public class CompilationEngine {
         next();
          //"{"
         next();
-        compileStatements();
+        if(token.equals("}")){
+            vm.writeGoto("WHILETRUE" + labelCounter);
+            vm.writeLabel("WHILEFALSE" + labelCounter);
+            return;
+        } else {
+            compileStatements();
+        }
         vm.writeGoto("WHILETRUE" + labelCounter);
         vm.writeLabel("WHILEFALSE" + labelCounter);
         next();
@@ -400,13 +415,19 @@ public class CompilationEngine {
     public void CompileExpression()throws IOException{
         //Compiles an expression
         vm.writecomment("<expression>\n");
+        if(token.equals("printString")){
+            System.out.println("stop");
+        }
         CompileTerm();
 
         if(token.equals("+")||token.equals("-")||token.equals("*")||token.equals("/")||token.equals("&amp;")||token.equals("|")||token.equals("&lt;")||token.equals("&gt;")||token.equals("=")){
              // op (+,-,",etc)
             String op = token;
             next();
-            CompileTerm();
+
+
+
+            CompileExpression();
             vm.writeArithmetic(vm.getCommand(op));
         } else {
 //            unNext();//undo the previous next
@@ -546,10 +567,9 @@ public class CompilationEngine {
             next();//"("
             next();
             vm.writePush(VMWriter.Segment.POINTER,0);
-            vm.writePush(getSeg("this"), st.indexOf("this"));
             numberOfExpressions = CompileExpressionList();
              //")"
-            vm.writeCall(functionName, numberOfExpressions +1);
+            vm.writeCall(className+"."+functionName, numberOfExpressions +1);
         } else if(token.equals(".")) {
             //method call if String classname = a var name
             // constructor or function call is String className = a class name
@@ -562,11 +582,16 @@ public class CompilationEngine {
             next();//"("
             next();  //")"
             if (method) {
-                vm.writePush(getSeg("this"), st.indexOf("this"));
-                numberOfExpressions = 1;
+                vm.writePush(getSeg(className), st.indexOf(className));
+                numberOfExpressions=1;
             }
             numberOfExpressions = numberOfExpressions+CompileExpressionList();
-            vm.writeCall(className + "." + subroutineName, numberOfExpressions);
+            if (method) { // in case of method call, "className" is a variableName and should be replaced with an actual class name.
+                vm.writeCall(st.typeOf(className) + "." + subroutineName, numberOfExpressions);
+            } else {
+                vm.writeCall(className + "." + subroutineName, numberOfExpressions);
+            }
+
         } else {
             unNext();
         }

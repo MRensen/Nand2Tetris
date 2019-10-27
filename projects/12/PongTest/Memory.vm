@@ -1,0 +1,513 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Memory.init 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop static 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop static 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+pop static 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2048
+//</term>
+//</expression>
+pop static 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push static 1
+add
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push static 1
+add
+//<expression>
+//<term>
+push constant 14335
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Memory.peek 0
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+push static 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Memory.poke 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+push static 0
+add
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Memory.alloc 3
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push static 1
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<whileStatement>
+label WHILETRUE0
+//<expression>
+//<term>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+add
+//</expression>
+lt
+//</expression>
+not
+if-goto WHILEFALSE0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//</expressionList>
+call Output.printInt 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+not
+if-goto IFFALSE1
+//<statements>
+//<returnStatement>
+//<expression>
+//<term>
+//<term>
+push constant 1
+//</term>
+neg
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+goto IFTRUE1
+label IFFALSE1
+label IFTRUE1
+//</ifStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto WHILETRUE0
+label WHILEFALSE0
+//</whileStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+add
+//</expression>
+add
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+add
+//</expression>
+//</term>
+//</expression>
+sub
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push local 2
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push local 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push local 0
+add
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push local 2
+add
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+add
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Memory.deAlloc 2
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push argument 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push argument 0
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop static 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+push static 1
+add
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push static 3
+//</term>
+//</expression>
+push static 1
+add
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

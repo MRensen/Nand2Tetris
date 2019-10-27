@@ -1,0 +1,990 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Main.main 5
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 16
+call String.new 1
+push constant 107
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<whileStatement>
+label WHILETRUE0
+//<expression>
+//<term>
+//<term>
+push local 4
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 32
+call String.new 1
+push constant 80
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 103
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 68
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 119
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<whileStatement>
+label WHILETRUE1
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+not
+if-goto WHILEFALSE1
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto WHILETRUE1
+label WHILEFALSE1
+//</whileStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<whileStatement>
+label WHILETRUE3
+//<expression>
+//<term>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<term>
+push constant 0
+//</term>
+eq
+//</expression>
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE3
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.keyPressed 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto WHILETRUE3
+label WHILEFALSE3
+//</whileStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 137
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE5
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 2
+call String.new 1
+push constant 111
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//</statements>
+goto IFTRUE5
+label IFFALSE5
+label IFTRUE5
+//</ifStatement>
+//</statements>
+goto WHILETRUE0
+label WHILEFALSE0
+//</whileStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 14
+call String.new 1
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 67
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 59
+call String.new 1
+push constant 40
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 41
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<whileStatement>
+label WHILETRUE8
+//<expression>
+//<term>
+//<term>
+push local 4
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE8
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 29
+call String.new 1
+push constant 80
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 51
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Keyboard.readChar 0
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<term>
+push constant 51
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE9
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 2
+call String.new 1
+push constant 111
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//</statements>
+goto IFTRUE9
+label IFFALSE9
+label IFTRUE9
+//</ifStatement>
+//</statements>
+goto WHILETRUE8
+label WHILEFALSE8
+//</whileStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 14
+call String.new 1
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 76
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 38
+call String.new 1
+push constant 40
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 103
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 41
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Output.printString 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//</expressionList>
+call Output.println 0
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<whileStatement>
+label WHILETRUE12
+//<expression>
+//<term>
+//<term>
+push local 4
+//</term>
+not
+//</term>
+//</expression>
+not
+if-goto WHILEFALSE12
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 36
+call String.new 1
+push constant 80
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 74
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 67
+call String.appendChar 2
+push constant 75
+call String.appendChar 2
+push constant 39
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+//</term>
+//</expression>
+//</expressionList>
+call Keyboard.readLine 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+push local 2
+//<expressionList>
+//</expressionList>
+call String.length 1
+//</subroutineCall>
+//</term>
+//<term>
+push constant 4
+//</term>
+eq
+//</expression>
+not
+if-goto IFFALSE13
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<subroutineCall>
+push local 2
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call String.charAt 2
+//</subroutineCall>
+//</term>
+//<term>
+push constant 74
+//</term>
+eq
+//</expression>
+//</term>
+//</expression>
+not
+if-goto IFFALSE14
+//<statements>
+//</statements>
+goto IFTRUE14
+label IFFALSE14
+label IFTRUE14
+//</ifStatement>
+//</statements>
+goto IFTRUE13
+label IFFALSE13
+label IFTRUE13
+//</ifStatement>
+//</statements>
+goto WHILETRUE12
+label WHILEFALSE12
+//</whileStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

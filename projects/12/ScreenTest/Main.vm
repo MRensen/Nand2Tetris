@@ -1,0 +1,516 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Main.main 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 511
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 255
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 220
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 511
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 220
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 280
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 90
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 410
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 220
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 350
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 120
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 390
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 219
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 292
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 120
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 332
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 150
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 360
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 170
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawCircle 3
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 280
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 90
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 345
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 35
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 345
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 35
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 410
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 90
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 140
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 60
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 30
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawCircle 3
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 140
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 26
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 140
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 6
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 163
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 35
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 178
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 20
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 174
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 60
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 194
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 60
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 163
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 85
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 178
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 100
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 140
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 94
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 140
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 114
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 117
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 85
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 102
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 100
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 106
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 60
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 86
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 60
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 117
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 35
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 102
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 20
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

@@ -1,0 +1,408 @@
+//<class>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Main.main 4
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8000
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 333
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8000
+//</term>
+//</expression>
+//</expressionList>
+call Memory.peek 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8001
+//</term>
+//</expression>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+//</expressionList>
+call Array.new 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+push local 1
+add
+//<expression>
+//<term>
+push constant 222
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8002
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+push local 1
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+//</expressionList>
+call Array.new 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+push local 2
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+push local 1
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 100
+//</term>
+//</expression>
+sub
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8003
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+push local 2
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 500
+//</term>
+//</expression>
+//</expressionList>
+call Array.new 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 499
+//</term>
+//</expression>
+push local 3
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 2
+//</term>
+//</expression>
+push local 1
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+push local 2
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+sub
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8004
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 499
+//</term>
+//</expression>
+push local 3
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push local 1
+//<expressionList>
+//</expressionList>
+call Array.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push local 2
+//<expressionList>
+//</expressionList>
+call Array.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 3
+//</term>
+//</expression>
+//</expressionList>
+call Array.new 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+push local 2
+add
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 499
+//</term>
+//</expression>
+push local 3
+add
+pop pointer 1
+push that 0
+//</term>
+//<expression>
+//<term>
+push constant 90
+//</term>
+//</expression>
+sub
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 8005
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+push local 2
+add
+pop pointer 1
+push that 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push local 3
+//<expressionList>
+//</expressionList>
+call Array.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+push local 2
+//<expressionList>
+//</expressionList>
+call Array.dispose 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

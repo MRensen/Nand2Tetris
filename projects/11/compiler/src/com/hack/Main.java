@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
 
-        String testAddress = "/home/mark/Documents/nand2tetris/projects/11/Pong";
+        String testAddress = "/home/mark/Documents/nand2tetris/projects/12/PongTest";
         String tempname;
         switch (args.length) {
             case 0:

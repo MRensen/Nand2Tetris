@@ -1,0 +1,1019 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.new 0
+push constant 3
+call Memory.alloc 1
+pop pointer 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop this 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+pop this 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+pop this 2
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call draw 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.dispose 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push pointer 0
+//</term>
+//</expression>
+//</expressionList>
+call Memory.deAlloc 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.draw 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.erase 0
+push argument 0
+pop pointer 0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.incSize 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 254
+//</term>
+lt
+//</expression>
+//</term>
+//<term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 510
+//</term>
+lt
+//</expression>
+//</term>
+and
+//</expression>
+not
+if-goto IFFALSE0
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call erase 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 2
+//</term>
+add
+//</expression>
+pop this 2
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call draw 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE0
+label IFFALSE0
+label IFTRUE0
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.decSize 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 2
+//</term>
+gt
+//</expression>
+not
+if-goto IFFALSE2
+//<statements>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call erase 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 2
+//</term>
+//<term>
+push constant 2
+//</term>
+sub
+//</expression>
+pop this 2
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+push pointer 0
+push pointer 0
+//<expressionList>
+//</expressionList>
+call draw 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE2
+label IFFALSE2
+label IFTRUE2
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.moveUp 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 1
+//</term>
+gt
+//</expression>
+not
+if-goto IFFALSE4
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 1
+//</term>
+sub
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 2
+//</term>
+sub
+//</expression>
+pop this 1
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE4
+label IFFALSE4
+label IFTRUE4
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.moveDown 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 254
+//</term>
+lt
+//</expression>
+not
+if-goto IFFALSE6
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push constant 2
+//</term>
+add
+//</expression>
+pop this 1
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 1
+//</term>
+sub
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE6
+label IFFALSE6
+label IFTRUE6
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.moveLeft 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 1
+//</term>
+gt
+//</expression>
+not
+if-goto IFFALSE8
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 1
+//</term>
+sub
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 2
+//</term>
+sub
+//</expression>
+pop this 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE8
+label IFFALSE8
+label IFTRUE8
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Square.moveRight 0
+push argument 0
+pop pointer 0
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 510
+//</term>
+lt
+//</expression>
+not
+if-goto IFFALSE10
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push this 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 1
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push constant 2
+//</term>
+add
+//</expression>
+pop this 0
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+//</expressionList>
+call Screen.setColor 1
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</term>
+//<term>
+push constant 1
+//</term>
+sub
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push this 0
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//<expression>
+//<term>
+push this 1
+//</term>
+//<term>
+push this 2
+//</term>
+add
+//</expression>
+//</expressionList>
+call Screen.drawRectangle 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE10
+label IFFALSE10
+label IFTRUE10
+//</ifStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>

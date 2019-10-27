@@ -1,0 +1,1239 @@
+//<class>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<classVarDec>
+//</classVarDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Screen.init 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 16384
+//</term>
+//</expression>
+pop static 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 16384
+//</term>
+//</expression>
+pop static 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 1
+neg
+//</term>
+//</expression>
+pop static 2
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Screen.clearScreen 1
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<whileStatement>
+label WHILETRUE0
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 8192
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto WHILEFALSE0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+push static 0
+add
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto WHILETRUE0
+label WHILEFALSE0
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Screen.setColor 0
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop static 2
+//</letStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Screen.drawPixel 3
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push constant 32
+//</term>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 16
+//</term>
+//</expression>
+call Math.divide 2
+//</expression>
+//</term>
+//</expression>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push static 1
+//</term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+add
+//</expression>
+//</expressionList>
+call Memory.peek 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push constant 16
+//</term>
+//</expression>
+//</expressionList>
+call Math.mod 2
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+//<expression>
+//<term>
+push static 2
+//</term>
+//</expression>
+//</expressionList>
+call Math.changeBit 3
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push static 1
+//</term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+add
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</expressionList>
+call Memory.poke 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+//<varDec>
+//</varDec>
+function Screen.drawLine 8
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+sub
+//</expression>
+//</expressionList>
+call Math.abs 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 2
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+sub
+//</expression>
+//</expressionList>
+call Math.abs 1
+//</subroutineCall>
+//</term>
+//</expression>
+pop local 3
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 4
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 5
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+pop local 6
+//</letStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+not
+if-goto IFFALSE2
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//</expression>
+gt
+//</expression>
+not
+if-goto IFFALSE3
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//</expression>
+pop local 1
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+pop argument 3
+//</letStatement>
+//</statements>
+goto IFTRUE3
+label IFFALSE3
+label IFTRUE3
+//</ifStatement>
+//<whileStatement>
+label WHILETRUE5
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto WHILEFALSE5
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 1
+//</letStatement>
+//</statements>
+goto WHILETRUE5
+label WHILEFALSE5
+//</whileStatement>
+//</statements>
+goto IFTRUE2
+label IFFALSE2
+label IFTRUE2
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 3
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+eq
+//</expression>
+not
+if-goto IFFALSE8
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+gt
+//</expression>
+not
+if-goto IFFALSE9
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+pop argument 2
+//</letStatement>
+//</statements>
+goto IFTRUE9
+label IFFALSE9
+label IFTRUE9
+//</ifStatement>
+//<whileStatement>
+label WHILETRUE11
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto WHILEFALSE11
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto WHILETRUE11
+label WHILEFALSE11
+//</whileStatement>
+//</statements>
+goto IFTRUE8
+label IFFALSE8
+label IFTRUE8
+//</ifStatement>
+//<whileStatement>
+label WHILETRUE14
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 4
+//</term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//<expression>
+//<term>
+push local 4
+//</term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+eq
+//</expression>
+or
+//</expression>
+lt
+//</expression>
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 5
+//</term>
+//<expression>
+//<term>
+push local 3
+//</term>
+//<expression>
+//<term>
+push local 5
+//</term>
+//<expression>
+//<term>
+push local 3
+//</term>
+//</expression>
+eq
+//</expression>
+or
+//</expression>
+lt
+//</expression>
+//</term>
+//</expression>
+and
+//</expression>
+not
+if-goto WHILEFALSE14
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE15
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE16
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push local 4
+//</term>
+//</expression>
+add
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push local 5
+//</term>
+//</expression>
+add
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE16
+label IFFALSE16
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push local 4
+//</term>
+//</expression>
+sub
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push local 5
+//</term>
+//</expression>
+add
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+label IFTRUE16
+//</ifStatement>
+//</statements>
+goto IFTRUE15
+label IFFALSE15
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE18
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push local 4
+//</term>
+//</expression>
+add
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push local 5
+//</term>
+//</expression>
+sub
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+goto IFTRUE18
+label IFFALSE18
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push local 4
+//</term>
+//</expression>
+sub
+//</expression>
+//<expression>
+//<term>
+push local 1
+//</term>
+//<expression>
+//<term>
+push local 5
+//</term>
+//</expression>
+sub
+//</expression>
+//</expressionList>
+call Screen.drawPixel 2
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//</statements>
+label IFTRUE18
+//</ifStatement>
+//</statements>
+label IFTRUE15
+//</ifStatement>
+//<ifStatement>
+//<expression>
+//<term>
+push local 6
+//</term>
+//<expression>
+//<term>
+push constant 0
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto IFFALSE21
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push local 4
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 4
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 6
+//</term>
+//<expression>
+//<term>
+push local 3
+//</term>
+//</expression>
+add
+//</expression>
+pop local 6
+//</letStatement>
+//</statements>
+goto IFTRUE21
+label IFFALSE21
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push local 5
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 5
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 6
+//</term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+sub
+//</expression>
+pop local 6
+//</letStatement>
+//</statements>
+label IFTRUE21
+//</ifStatement>
+//</statements>
+goto WHILETRUE14
+label WHILEFALSE14
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+function Screen.drawRectangle 0
+//<statements>
+//<whileStatement>
+label WHILETRUE24
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto WHILEFALSE24
+//<statements>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//</expression>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//</expression>
+//<expression>
+//<term>
+push argument 3
+//</term>
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop argument 0
+//</letStatement>
+//</statements>
+goto WHILETRUE24
+label WHILEFALSE24
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//<subroutineDec>
+//<parameterList>
+//</parameterList>
+//<subroutineBody>
+//<varDec>
+//</varDec>
+function Screen.drawCircle 3
+//<statements>
+//<ifStatement>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//<expression>
+//<term>
+push constant 181
+//</term>
+//</expression>
+gt
+//</expression>
+not
+if-goto IFFALSE26
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push constant 181
+//</term>
+//</expression>
+pop argument 2
+//</letStatement>
+//</statements>
+goto IFTRUE26
+label IFFALSE26
+label IFTRUE26
+//</ifStatement>
+//<letStatement>
+//<expression>
+//<term>
+//<term>
+push argument 2
+//</term>
+neg
+//</term>
+//</expression>
+pop local 0
+//</letStatement>
+//<letStatement>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop local 1
+//</letStatement>
+//<whileStatement>
+label WHILETRUE28
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push argument 2
+//</term>
+//</expression>
+lt
+//</expression>
+not
+if-goto WHILEFALSE28
+//<statements>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+call Math.multiply 2
+//</expression>
+pop local 2
+//</letStatement>
+//<doStatement>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+//</term>
+//</expression>
+sub
+//</expression>
+//</expressionList>
+call Math.sqrt 1
+//</subroutineCall>
+//</term>
+//</expression>
+sub
+//</expression>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+add
+//</expression>
+//<expression>
+//<term>
+push argument 0
+//</term>
+//<expression>
+//<term>
+//<subroutineCall>
+//<expressionList>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 1
+//</term>
+//</expression>
+//</term>
+//<expression>
+//<term>
+//<expression>
+//<term>
+push local 2
+//</term>
+//</expression>
+//</term>
+//</expression>
+sub
+//</expression>
+//</expressionList>
+call Math.sqrt 1
+//</subroutineCall>
+//</term>
+//</expression>
+add
+//</expression>
+//<expression>
+//<term>
+push argument 1
+//</term>
+//<expression>
+//<term>
+push local 0
+//</term>
+//</expression>
+add
+//</expression>
+//</expressionList>
+call Screen.drawLine 4
+//</subroutineCall>
+pop temp 0
+//</doStatement>
+//<letStatement>
+//<expression>
+//<term>
+push local 0
+//</term>
+//<expression>
+//<term>
+push constant 1
+//</term>
+//</expression>
+add
+//</expression>
+pop local 0
+//</letStatement>
+//</statements>
+goto WHILETRUE28
+label WHILEFALSE28
+//</whileStatement>
+//<returnStatement>
+push constant 0
+return
+//</returnStatement>
+//</statements>
+//</subroutineBody>
+//</subroutineDec>
+//</class>
